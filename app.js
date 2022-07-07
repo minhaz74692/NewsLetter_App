@@ -60,9 +60,9 @@ app.post("/failure.html", (req, res) => {
     res.redirect("/");
 })
 
-
-app.listen(process.env.PORT || 5000, () => {
-    console.log("Your NewsLetterApp is listhenig Port 5000!");
+const port = 5000;
+app.listen(process.env.PORT || port, () => {
+    console.log("Your NewsLetterApp is listhenig Port "+ port);
 })
 
 
